@@ -10,6 +10,8 @@ import { FootballService } from 'src/app/services/football.service';
 export class LeagueComponent implements OnInit {
 
   league: any;
+  teams: any;
+
   constructor(private activatedRoute: ActivatedRoute, private football: FootballService) {
     this.activatedRoute.params.subscribe(params => {
       this.football.getLeagueById(params.id).subscribe((data: any) => {
@@ -18,6 +20,12 @@ export class LeagueComponent implements OnInit {
         console.log(error);
       });
 
+      this.football.getTeamsById(params.id).subscribe((data: any) => {
+        this.teams = data;
+        console.log(this.teams);
+      }, (error) => {
+        console.log(error);
+      });
     })
   }
 

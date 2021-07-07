@@ -12,9 +12,8 @@ export class LeaguesComponent implements OnInit {
   league: any;
   constructor(private activatedRoute: ActivatedRoute, private football: FootballService) {
     this.activatedRoute.params.subscribe(params => {
-      this.football.getLeagueById(params.id).subscribe((data: any) => {
+      this.football.getLeagues().subscribe((data: any) => {
         this.league = data;
-        console.log(this.league);
       }, (error) => {
         console.log(error);
       });

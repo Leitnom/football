@@ -7,6 +7,7 @@ import { LeaguesComponent } from './pages/leagues/leagues.component';
 import { TeamsComponent } from './pages/teams/teams.component';
 import { PlayersComponent } from './pages/players/players.component';
 import { LeagueComponent } from './pages/league/league.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { LeagueComponent } from './pages/league/league.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

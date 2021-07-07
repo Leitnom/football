@@ -22,7 +22,6 @@ export class LeagueComponent implements OnInit {
 
       this.football.getTeamsById(params.id).subscribe((data: any) => {
         this.teams = data;
-        console.log(this.teams);
       }, (error) => {
         console.log(error);
       });

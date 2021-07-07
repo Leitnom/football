@@ -12,9 +12,10 @@ text-align: center; padding-top: 20px; display: inline-block;" class="card">
 <div *ngFor="let team of teams" style="margin: 10px; background: beige; 
 display: inline-block; width: 200px; height: 200px; 
 text-align: center; padding-top: 20px; display: inline-block;" class="card">
-    <img src="{{team.LogodelEquipo}}" alt="" width="40%">
-    <div>
-        <h1>{{team.Nombredelequipo}}</h1>
-    </div>
+    <a routerLink="/team/{{team.id}}">
+        <img src="{{team.LogodelEquipo}}" alt="" width="40%">
+        <div>
+            <h1>{{team.Nombredelequipo}}</h1>
+        </div>
+    </a>
 </div>
-

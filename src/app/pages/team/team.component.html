@@ -12,8 +12,10 @@ text-align: center; padding-top: 20px; display: inline-block;" class="card">
 <div *ngFor="let player of players" style="margin: 10px; background: beige; 
 display: inline-block; width: 200px; height: 200px; 
 text-align: center; padding-top: 20px; display: inline-block;" class="card">
-    <img src="{{player.Avatar}}" alt="" width="40%">
-    <div>
-        <h1>{{player.NombredelJugador}}</h1>
-    </div>
+    <a routerLink="/player/{{player.id}}">
+        <img src="{{player.Avatar}}" alt="" width="40%">
+        <div>
+            <h1>{{player.NombredelJugador}}</h1>
+        </div>
+    </a>
 </div>

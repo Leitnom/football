@@ -7,5 +7,7 @@ text-align: center; padding-top: 20px; display: inline-block;" class="card">
     </div>
 </div>
 <div *ngFor="let team of teams">
-    <h1 style="text-align: center;">Equipo: {{team.Nombredelequipo}}</h1>
+    <a routerLink="/team/{{team.id}}">
+        <h1 style="text-align: center;">Equipo: {{team.Nombredelequipo}}</h1>
+    </a>
 </div>

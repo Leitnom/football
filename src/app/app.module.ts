@@ -9,6 +9,8 @@ import { PlayersComponent } from './pages/players/players.component';
 import { LeagueComponent } from './pages/league/league.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PlayerComponent } from './pages/player/player.component';
+import { TeamComponent } from './pages/team/team.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http';
     LeaguesComponent,
     TeamsComponent,
     PlayersComponent,
-    LeagueComponent
+    LeagueComponent,
+    PlayerComponent,
+    TeamComponent
 
   ],
   imports: [

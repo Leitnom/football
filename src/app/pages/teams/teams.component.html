@@ -2,7 +2,7 @@
 display: inline-block; width: 180px; height: 150px; 
 text-align: center; padding-top: 50px;" class="card" 
 *ngFor="let team of teams">
-    <a routerLink="">
+    <a routerLink="/team/{{team.id}}">
         <img src="{{team.LogodelEquipo}}" alt="" width="40%">
         <p>{{team.Nombredelequipo}}</p>
     </a>

@@ -1,7 +1,7 @@
 <div style="margin: 10px; background: beige; 
 display: inline-block; width: 180px; height: 150px; 
 text-align: center; padding-top: 50px;" class="card" *ngFor="let player of players">
-    <a routerLink="/player/{{player.Identificador}}">
+    <a routerLink="/player/{{player.id}}">
         <img src="{{player.Avatar}}" alt="" width="40%">
         <p>{{player.NombredelJugador}}</p>
     </a>

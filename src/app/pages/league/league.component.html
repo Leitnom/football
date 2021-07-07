@@ -1,8 +1,8 @@
-<div style="margin: 10px; background: beige; 
-display: inline-block; width: 180px; height: 150px; 
-text-align: center; padding-top: 50px;" class="card">
-    <img src="{{league.LogodelaLiga}}" alt="">
-</div>
-<div>
-    <h1>{{league.NombreDeLaLiga}}</h1>
+<div *ngFor="let item of league" style="margin: 10px; background: beige; 
+display: inline-block; width: 80px; height: 80px; 
+text-align: center; padding-top: 20px; display: inline-block;" class="card">
+    <img src="{{item.LogodelaLiga}}" alt="">
+    <div>
+        <h1>{{item.NombreDeLaLiga}}</h1>
+    </div>
 </div>

@@ -16,7 +16,7 @@ export class FootballService {
   };
 
   getLeagueById(id: string){
-    return this.http.get(`${this.url}/leagues/${id}`)
+    return this.http.get(this.url +'/leagues?Identificador=' + id)
   }
 
   getTeams(){

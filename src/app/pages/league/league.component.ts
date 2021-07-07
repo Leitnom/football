@@ -14,7 +14,6 @@ export class LeagueComponent implements OnInit {
     this.activatedRoute.params.subscribe(params => {
       this.football.getLeagueById(params.id).subscribe((data: any) => {
         this.league = data;
-        
       }, (error) => {
         console.log(error);
       });

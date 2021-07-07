@@ -1,1 +1,19 @@
-<p>team works!</p>
+<div *ngFor="let team of teams" style="margin-left: 42%; margin-top: 20px; background: rgb(80, 80, 79); 
+display: inline-block; width: 200px; height: 200px; 
+text-align: center; padding-top: 20px; display: inline-block;" class="card">
+    <img src="{{team.LogodelEquipo}}" alt="" width="60%">
+    <div>
+        <h1>Liga: {{team.Nombredelequipo}}</h1>
+    </div>
+</div>
+<br>
+<br>
+<h2 style="text-align: center;">JUGADORES</h2>
+<div *ngFor="let player of players" style="margin: 10px; background: beige; 
+display: inline-block; width: 200px; height: 200px; 
+text-align: center; padding-top: 20px; display: inline-block;" class="card">
+    <img src="{{player.Avatar}}" alt="" width="40%">
+    <div>
+        <h1>{{player.NombredelJugador}}</h1>
+    </div>
+</div>

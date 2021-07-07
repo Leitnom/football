@@ -9,11 +9,11 @@ import { FootballService } from 'src/app/services/football.service';
 })
 export class LeaguesComponent implements OnInit {
 
-  league: any;
+  leagues: any;
   constructor(private activatedRoute: ActivatedRoute, private football: FootballService) {
     this.activatedRoute.params.subscribe(params => {
       this.football.getLeagues().subscribe((data: any) => {
-        this.league = data;
+        this.leagues = data;
       }, (error) => {
         console.log(error);
       });

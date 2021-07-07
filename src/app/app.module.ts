@@ -8,6 +8,7 @@ import { TeamsComponent } from './pages/teams/teams.component';
 import { PlayersComponent } from './pages/players/players.component';
 import { LeagueComponent } from './pages/league/league.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]

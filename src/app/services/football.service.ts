@@ -46,4 +46,15 @@ export class FootballService {
   getPlayers(){
     return this.http.get(`${this.url}/players`)
   };
+
+  // Consulta el player que tenga el id
+  getPlyerById(id: string){
+    return this.http.get(this.url +'/players?id=' + id)
+  }
+
+  // Consulta los players de un team
+  getTeamPlayerById(id: string){
+    return this.http.get(this.url +'/teams?id=' + id)
+  }
+
 }

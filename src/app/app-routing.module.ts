@@ -11,7 +11,7 @@ const app_routes: Routes = [
     { path: 'leagues', component: LeaguesComponent },
     { path: 'teams', component: TeamsComponent },
     { path: 'players', component: PlayersComponent },
-    { path: 'leage/:id', component: LeagueComponent },
+    { path: 'league/:id', component: LeagueComponent },
     { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

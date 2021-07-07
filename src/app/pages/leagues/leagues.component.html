@@ -2,7 +2,7 @@
 display: inline-block; width: 180px; height: 150px; 
 text-align: center; padding-top: 50px;" class="card" 
 *ngFor="let league of leagues">
-    <a routerLink="/liga/{{league.Identificador}}">
+    <a routerLink="/league/{{league.Identificador}}">
         <img src="{{league.LogodelaLiga}}" alt="">
         <p>{{league.NombreDeLaLiga}}</p>
     </a>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { FootballService } from 'src/app/services/football.service';
 
 @Component({
   selector: 'app-players',
@@ -7,7 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayersComponent implements OnInit {
 
-  constructor() { }
+  players: any;
+  constructor(private activatedRoute: ActivatedRoute, private football: FootballService) {
+    this.activatedRoute.params.subscribe(params => {
+      this.football.getPlayers().subscribe((data: any) => {
+        this.players = data;
+      }, (error) => {
+        console.log(error);
+      });
+
+    })
+  }
 
   ngOnInit(): void {
   }

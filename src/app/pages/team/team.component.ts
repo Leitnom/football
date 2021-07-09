@@ -18,7 +18,6 @@ export class TeamComponent implements OnInit {
         this.teams = data;
         this.football.getLeagueById(this.teams[0].Liga).subscribe((data2: any) => {
           this.leagues = data2;
-          console.log(this.leagues)
         }, (error) => {
           console.log(error);
         });
@@ -28,7 +27,6 @@ export class TeamComponent implements OnInit {
 
       this.football.getPlayersById(params.id).subscribe((data: any) => {
         this.players = data;
-        console.log(this.players)
       }, (error) => {
         console.log(error);
       });

@@ -36,6 +36,11 @@ export class FootballService {
     return this.http.get(this.url +'/teams?id=' + id)
   }
 
+  // Eliminar team
+  deleteTeam(form: any) {
+    return this.http.delete(`${this.url}/teams/${form.id}/`, form)
+  }
+
   // Consulta los players de un team
   getPlayersById(id: string){
     return this.http.get(this.url +'/players?teamId=' + id)

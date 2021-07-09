@@ -8,7 +8,7 @@ import { FootballService } from 'src/app/services/football.service';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
-
+  leagues: any;
   teams: any;
   players: any;
 
@@ -16,15 +16,23 @@ export class TeamComponent implements OnInit {
     this.activatedRoute.params.subscribe(params => {
       this.football.getTeamById(params.id).subscribe((data: any) => {
         this.teams = data;
+        this.football.getLeagueById(this.teams[0].Liga).subscribe((data2: any) => {
+          this.leagues = data2;
+          console.log(this.leagues)
+        }, (error) => {
+          console.log(error);
+        });
       }, (error) => {
         console.log(error);
       });
 
       this.football.getPlayersById(params.id).subscribe((data: any) => {
         this.players = data;
+        console.log(this.players)
       }, (error) => {
         console.log(error);
       });
+
     })
   }
 

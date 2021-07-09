@@ -1,11 +1,12 @@
 <div class="card" *ngFor="let item of league">
-    <p-card header="{{league.NombreDeLaLiga}}">
-        <h3>League {{item.NombreDeLaLiga}}</h3>
+    <p-card header="">
+        <h3>{{item.NombreDeLaLiga}}</h3>
         <ng-template pTemplate="header">
             <img src="{{item.LogodelaLiga}}" alt="{{item.NombreDeLaLiga}}" style="width: 80px;">
         </ng-template>
     </p-card>
 </div>
+
 <div class="card">
     <p-toolbar styleClass="p-mb-4">
         <ng-template pTemplate="left">

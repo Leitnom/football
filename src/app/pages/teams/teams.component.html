@@ -24,7 +24,7 @@
                 <td><img alt="example" src="{{team.LogodelEquipo}}" width="60px"></td>
                 <td>{{team.Nombredelequipo}}</td>
                 <td>
-                    <button pButton pRipple type="button" icon="pi pi-eye"
+                    <button routerLink="/team/{{team.id}}" pButton pRipple type="button" icon="pi pi-eye"
                         class="p-button-rounded p-button-info  p-button-text"></button>
                     <button routerLink="/editeam/{{team.id}}" pButton pRipple type="button" icon="pi pi-pencil"
                         class="p-button-rounded p-button-success  p-button-text"></button>

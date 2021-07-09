@@ -80,7 +80,7 @@ export class FootballService {
 
    // Agregar player
    newPlayer(form:any){
-    return this.http.post(`${this.url}/player/${form.id}/`, form)
+    return this.http.post(`${this.url}/players/${form.id}/`, form)
   }
 
   // Eliminar player

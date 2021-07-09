@@ -1,1 +1,24 @@
-<p>newplayer works!</p>
+<p-toast key="myKey2"></p-toast>
+<div class="container">
+    <form [formGroup]="newPlayer" (ngSubmit)="newForm(newPlayer.value)">
+        <div class="form-group">
+            <label for="imagen" class="form-label">Url de la imagen</label>
+            <input type="text" class="form-control" formControlName="Avatar"  placeholder="Url de la imagen">
+        </div>
+        <div class="form-goup">
+            <label for="formGroupExampleInput2" class="form-label">Nombre del Jugador</label>
+            <input type="text" class="form-control" formControlName="NombredelJugador"  id="formGroupExampleInput2" placeholder="Nombre del Jugador">
+        </div>
+        <div class="form-goup">
+            <label for="team" class="form-label">Equipo</label>
+            <select class="form-select" formControlName="teamId" aria-label="Default select example">
+                <option value="">Seleccione una Option!</option>
+                <option  *ngFor="let team of teams" value="{{team.id}}">{{team.Nombredelequipo}}
+                </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button routerLink="/teams" type="button" class="btn btn-segundary">Cancelar</button>
+    </form>
+</div>
+

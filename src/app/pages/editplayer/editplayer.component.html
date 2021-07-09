@@ -1,1 +1,39 @@
-<p>editplayer works!</p>
+<p-toast key="myKey2"></p-toast>
+<p-panel header="EditarPlayer">
+    <form [formGroup]="editPlayer" (ngSubmit)="editForm(editPlayer.value)">
+        <div class="ul-g ui-fluid">
+            <div class="ul-g-12">
+                <div class="ui-g-4">
+                    <label for="url">Url de la imagen</label>
+                </div>
+                <div class="ui-g-8">
+                    <input pInputText formControlName="Avatar" placeholder="Url de la imagen" id="url">
+                </div>
+            </div>
+
+            <div class="ul-g-12">
+                <div class="ui-g-4">
+                    <label for="nombre">Nombre del Juagador</label>
+                </div>
+                <div class="ui-g-8">
+                    <input pInputText formControlName="NombredelJugador" placeholder="Nombre del Juagador" id="nombre">
+                </div>
+            </div>
+
+            <div class="ul-g-12">
+                <div class="ui-g-4">
+                    <label for="url">Equipo</label>
+                </div>
+                <div class="ui-g-8">
+                    <select class="form-select" formControlName="teamId" aria-label="Default select example">
+                        <option *ngFor="let team of teams" value="{{team.id}}">
+                            {{team.Nombredelequipo}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button routerLink="/players" type="button" class="btn btn-segundary">Cancelar</button>
+    </form>
+</p-panel>

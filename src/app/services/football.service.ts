@@ -67,9 +67,25 @@ export class FootballService {
     return this.http.get(`${this.url}/players`)
   };
 
+
   // Consulta el player que tenga el id
-  getPlyerById(id: string){
+  getPlayerById(id: string){
     return this.http.get(this.url +'/players?id=' + id)
+  }
+
+  // Editar team
+  editPlayer(form: any) {
+    return this.http.put(`${this.url}/players/${form.id}/`, form)
+  }
+
+   // Agregar player
+   newPlayer(form:any){
+    return this.http.post(`${this.url}/player/${form.id}/`, form)
+  }
+
+  // Eliminar player
+  deletePlayer(form: any) {
+    return this.http.delete(`${this.url}/players/${form.id}/`, form)
   }
 
 }

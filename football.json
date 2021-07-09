@@ -608,38 +608,26 @@
       "Nombredelequipo": "uu",
       "Liga": "4ddb5753-679c-4500-906a-f7b2a5f3f95c",
       "id": "Yu14-DZ"
+    },
+    {
+      "LogodelEquipo": "ultimo",
+      "Nombredelequipo": "ultimo",
+      "Liga": "4ddb5753-679c-4500-906a-f7b2a5f3f95c",
+      "id": "PFWzYDz"
     }
   ],
   "players": [
     {
-      "NombredelJugador": "Auguste Penwarden",
-      "id": "ca85cfed-69d8-4e03-9259-960195bde933",
-      "Avatar": "https://robohash.org/etconsequunturreprehenderit.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Amelie Hassan",
-      "id": "a933aea8-a3af-4d52-ac93-1779f201e607",
       "Avatar": "https://robohash.org/commodieavel.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
+      "NombredelJugador": "Amelie Hassans",
+      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b",
+      "id": "a933aea8-a3af-4d52-ac93-1779f201e607"
     },
     {
-      "NombredelJugador": "Petronia Kirkham",
-      "id": "805abaa4-4a4d-4688-8bcd-8b5f8d53d3bb",
-      "Avatar": "https://robohash.org/etnesciuntquibusdam.png?size=250x250&set=set1",
-      "teamId": "72434eb3-b64f-49ff-9070-99780c5122af"
-    },
-    {
-      "NombredelJugador": "Gerrie Tinline",
-      "id": "bbc58944-d65e-43fa-b397-bf0b81cc8031",
-      "Avatar": "https://robohash.org/etquaeratmagnam.png?size=250x250&set=set1",
-      "teamId": "62a8b5d7-b88e-412d-893a-3843e5271370"
-    },
-    {
-      "NombredelJugador": "Gale de Broke",
-      "id": "2ac4406b-24ae-46c4-a374-ebb5452d6fa3",
       "Avatar": "https://robohash.org/aperiamanimiut.png?size=250x250&set=set1",
-      "teamId": "be4ad44b-2270-47c3-9641-c64f60c0325e"
+      "NombredelJugador": "Gale de Brokee",
+      "teamId": "be4ad44b-2270-47c3-9641-c64f60c0325e",
+      "id": "2ac4406b-24ae-46c4-a374-ebb5452d6fa3"
     },
     {
       "NombredelJugador": "Connie Scolts",

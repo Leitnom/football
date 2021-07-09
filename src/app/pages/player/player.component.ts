@@ -14,7 +14,7 @@ export class PlayerComponent implements OnInit {
 
   constructor(private activatedRoute: ActivatedRoute, private football: FootballService) {
     this.activatedRoute.params.subscribe(params => {
-      this.football.getPlyerById(params.id).subscribe((data: any) => {
+      this.football.getPlayerById(params.id).subscribe((data: any) => {
         this.players = data;
         this.football.getTeamPlayerById(this.players[0].teamId).subscribe((data: any) => {
           this.teams = data;

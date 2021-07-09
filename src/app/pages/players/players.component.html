@@ -1,8 +1,38 @@
-<div style="margin: 10px; background: beige; 
-display: inline-block; width: 180px; height: 150px; 
-text-align: center; padding-top: 50px;" class="card" *ngFor="let player of players">
-    <a routerLink="/player/{{player.id}}">
-        <img src="{{player.Avatar}}" alt="" width="40%">
-        <p>{{player.NombredelJugador}}</p>
-    </a>
+<p-toast position="top-center" key="myKey2"></p-toast>
+<div class="card">
+    <p-toolbar styleClass="p-mb-4">
+        <ng-template pTemplate="left">
+            <h3>Players Manager</h3>
+        </ng-template>
+        <ng-template pTemplate="right">
+            <button routerLink="/newplayer" pButton pRipple label="Nuevo" icon="pi pi-plus"
+                class="p-button-success p-mr-2"></button>
+        </ng-template>
+    </p-toolbar>
+    <p-table [value]="players" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+        currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        [rowsPerPageOptions]="[10,25,50]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Imagen</th>
+                <th>Nombre del Jugador</th>
+                <th>Acciones</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-player>
+            <tr>
+                <td><img alt="{{player.NombredelJugador}}}" src="{{player.Avatar}}" width="60px"></td>
+                <td>{{player.NombredelJugador}}</td>
+                <td>
+                    <button routerLink="/player/{{player.id}}" pButton pRipple type="button" icon="pi pi-eye"
+                        class="p-button-rounded p-button-info  p-button-text"></button>
+                    <button routerLink="/ediplayer/{{player.id}}" pButton pRipple type="button" icon="pi pi-pencil"
+                        class="p-button-rounded p-button-success  p-button-text"></button>
+                    <p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+                    <button (click)="confirm(player)" pButton pRipple type="button" icon="pi pi-times"
+                        class="p-button-rounded p-button-danger p-button-text"></button>
+                </td>
+            </tr>
+        </ng-template>
+    </p-table>
 </div>

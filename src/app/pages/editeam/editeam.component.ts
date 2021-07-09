@@ -20,7 +20,7 @@ export class EditeamComponent implements OnInit {
 
   leagues: any;
   team: any;
-  constructor(private football: FootballService, private activatedRoute: ActivatedRoute,private route: Router, private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private messageService: MessageService) {
+  constructor(private football: FootballService, private activatedRoute: ActivatedRoute, private route: Router, private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private messageService: MessageService) {
     this.activatedRoute.params.subscribe(params => {
       this.football.getTeamById(params.id).subscribe((data: any) => {
         this.team = data[0];
@@ -49,12 +49,16 @@ export class EditeamComponent implements OnInit {
 
   editForm(form: any) {
     this.football.editTeam(form).subscribe(data => {
-      this.messageService.add({ key: 'myKey2', severity: 'success', summary: 'Exito', detail: 'Team Guardado con exito' });
-      this.route.navigate(['/teams']);
+      this.messageService.add({ key: 'myKey2', severity: 'success', summary: 'Exito', detail: 'Team editado con exito' });
+      setTimeout(() => {                           // <<<---using ()=> syntax
+        this.route.navigate(['/teams'])
+      }, 1000);
     },
       error => {
-        this.messageService.add({ key: 'myKey2', severity: 'error', summary: 'Error!', detail: 'No se pudo Guardar' });
-        this.route.navigate(['/teams']);
+        this.messageService.add({ key: 'myKey2', severity: 'error', summary: 'Error!', detail: 'No se pudo editar' });
+        setTimeout(() => {                           // <<<---using ()=> syntax
+          this.route.navigate(['/teams'])
+        }, 1000);
       })
   }
 }

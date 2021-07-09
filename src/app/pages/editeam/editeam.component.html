@@ -1,4 +1,4 @@
-<p-toast position="top-center" key="myKey2"></p-toast>
+<p-toast key="myKey2"></p-toast>
 <p-panel header="EditarTeam">
     <form [formGroup]="editTeam" (ngSubmit)="editForm(editTeam.value)">
         <div class="ul-g ui-fluid">
@@ -7,20 +7,30 @@
                     <label for="url">Url de la imagen</label>
                 </div>
                 <div class="ui-g-8">
-                    <input pInputText formControlName="LogodelEquipo"  placeholder="Url de la imagen" id="url">
+                    <input pInputText formControlName="LogodelEquipo" placeholder="Url de la imagen" id="url">
                 </div>
             </div>
 
-            <div class="form-goup">
-                <label for="formGroupExampleInput2" class="form-label">Nombre del Equipo</label>
-                <input type="text" class="form-control" formControlName="Nombredelequipo"  id="formGroupExampleInput2" placeholder="Nombre del Equipo">
+            <div class="ul-g-12">
+                <div class="ui-g-4">
+                    <label for="url">Nombre del Equipo</label>
+                </div>
+                <div class="ui-g-8">
+                    <input pInputText formControlName="Nombredelequipo" placeholder="Url de la imagen" id="url">
+                </div>
             </div>
-            <div class="form-goup">
-                <label for="league" class="form-label">League</label>
-                <select class="form-select" formControlName="Liga" aria-label="Default select example">
-                    <option  *ngFor="let league of leagues" value="{{league.Identificador}}">{{league.NombreDeLaLiga}}
-                    </option>
-                </select>
+
+            <div class="ul-g-12">
+                <div class="ui-g-4">
+                    <label for="url">League</label>
+                </div>
+                <div class="ui-g-8">
+                    <select class="form-select" formControlName="Liga" aria-label="Default select example">
+                        <option *ngFor="let league of leagues" value="{{league.Identificador}}">
+                            {{league.NombreDeLaLiga}}
+                        </option>
+                    </select>
+                </div>
             </div>
         </div>
         <button type="submit" class="btn btn-success">Guardar</button>

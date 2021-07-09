@@ -29,6 +29,8 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import {PanelModule} from 'primeng/panel';
 import {InputTextModule} from 'primeng/inputtext';
 import {DropdownModule} from 'primeng/dropdown';
+import { EditplayerComponent } from './pages/editplayer/editplayer.component';
+import { NewplayerComponent } from './pages/newplayer/newplayer.component';
 
 
 
@@ -43,7 +45,9 @@ import {DropdownModule} from 'primeng/dropdown';
     PlayerComponent,
     TeamComponent,
     NewteamComponent,
-    EditeamComponent
+    EditeamComponent,
+    EditplayerComponent,
+    NewplayerComponent
 
   ],
   imports: [

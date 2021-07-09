@@ -24,4 +24,6 @@ export class PlayersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  confirm(player:any){}
+
 }

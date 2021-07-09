@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FootballService } from 'src/app/services/football.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ConfirmationService, MessageService, PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-newteam',
@@ -18,7 +19,7 @@ export class NewteamComponent implements OnInit {
 
   leagues: any;
 
-  constructor(private football: FootballService, private activatedRoute: ActivatedRoute, private router: Router) {
+  constructor(private football: FootballService, private activatedRoute: ActivatedRoute, private router: Router, private route: Router, private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private messageService: MessageService) {
     this.football.getLeagues().subscribe((data: any) => {
       this.leagues = data;
     }, (error) => {
@@ -27,15 +28,24 @@ export class NewteamComponent implements OnInit {
 
   }
 
- 
+
   ngOnInit(): void {
   }
 
-  newForm(form: any){
+  newForm(form: any) {
     this.football.newTeam(form).subscribe(data => {
-      this.router.navigate(['/teams'])
-      alert('hola');
-    })
+      this.messageService.add({ key: 'myKey2', severity: 'success', summary: 'Exito', detail: 'Team creado con exito' });
+      this.newTeam.reset();
+      setTimeout(() => {                           // <<<---using ()=> syntax
+        this.route.navigate(['/teams'])
+      }, 1000);
+    },
+      error => {
+        this.messageService.add({ key: 'myKey2', severity: 'error', summary: 'Error!', detail: 'No se pudo guardar' });
+        setTimeout(() => {                           // <<<---using ()=> syntax
+          this.route.navigate(['/teams'])
+        }, 1000);
+      })
   }
 
 }

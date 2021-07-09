@@ -1,1 +1,25 @@
-<p>newteam works!</p>
+<br>
+<h2>Nuevo Equipo</h2>
+<br>
+<div class="container">
+    <form [formGroup]="newTeam" (ngSubmit)="newForm(newTeam.value)">
+        <div class="form-group">
+            <label for="imagen" class="form-label">Url de la imagen</label>
+            <input type="text" class="form-control" formControlName="LogodelEquipo"  placeholder="Url de la imagen">
+        </div>
+        <div class="form-goup">
+            <label for="formGroupExampleInput2" class="form-label">Nombre del Equipo</label>
+            <input type="text" class="form-control" formControlName="Nombredelequipo"  id="formGroupExampleInput2" placeholder="Nombre del Equipo">
+        </div>
+        <div class="form-goup">
+            <label for="league" class="form-label">League</label>
+            <select class="form-select" formControlName="Liga" aria-label="Default select example">
+                <option value="">Seleccione una Option!</option>
+                <option  *ngFor="let league of leagues" value="{{league.Identificador}}">{{league.NombreDeLaLiga}}
+                </option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-success">Guardar</button>
+        <button routerLink="/teams" type="button" class="btn btn-segundary">Cancelar</button>
+    </form>
+</div>

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FootballService } from 'src/app/services/football.service';
 import { ConfirmationService, ConfirmEventType, MessageService } from 'primeng/api';
-import { Message } from 'primeng/api';
 import { PrimeNGConfig } from 'primeng/api';
 import { Router } from '@angular/router';
 
@@ -46,7 +45,6 @@ export class TeamsComponent implements OnInit {
             this.confirmationService.close();
             this.messageService.add({ key: 'myKey2', severity: 'error', summary: 'Error!', detail: 'No se pudo eliminar' });
           })
-
       },
       reject: () => {
         this.confirmationService.close();

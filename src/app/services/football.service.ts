@@ -51,6 +51,11 @@ export class FootballService {
     return this.http.delete(`${this.url}/teams/${form.id}/`, form)
   }
 
+   // Agregar team
+   newTeam(form:any){
+    return this.http.post(`${this.url}/teams/${form.id}/`, form)
+  }
+
   // Consulta los players de un team
   getPlayersById(id: string){
     return this.http.get(this.url +'/players?teamId=' + id)

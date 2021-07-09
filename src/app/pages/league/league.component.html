@@ -1,14 +1,12 @@
-<div *ngFor="let item of league" style="margin-left: 42%; margin-top: 20px; background: rgb(80, 80, 79); 
-display: inline-block; width: 200px; height: 200px; 
-text-align: center; padding-top: 20px; display: inline-block;" class="card">
-    <img src="{{item.LogodelaLiga}}" alt="">
-    <div>
-        <h1>Liga: {{item.NombreDeLaLiga}}</h1>
-    </div>
+<div class="card" *ngFor="let item of league">
+    <p-card header="{{league.NombreDeLaLiga}}">
+        <h3>League {{item.NombreDeLaLiga}}</h3>
+        <ng-template pTemplate="header">
+            <img src="{{item.LogodelaLiga}}" alt="{{item.NombreDeLaLiga}}" style="width: 80px;">
+        </ng-template>
+    </p-card>
 </div>
-<br>
-<br>
-<h2 style="text-align: center;">Equipos</h2>
+
 <div *ngFor="let team of teams" style="margin: 10px; background: beige; 
 display: inline-block; width: 200px; height: 200px; 
 text-align: center; padding-top: 20px; display: inline-block;" class="card">

@@ -1,0 +1,10 @@
+p-card{
+    display: inline-block;
+    text-align: center;
+    width: 15rem;
+    margin: 2em;
+    cursor: pointer;
+}
+p-card img{
+    width: 30%;
+}

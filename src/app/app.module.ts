@@ -16,6 +16,9 @@ import { FormsModule } from '@angular/forms';
 //PrimeNg
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MenubarModule} from 'primeng/menubar';
+import {CardModule} from 'primeng/card';
+import {ToolbarModule} from 'primeng/toolbar';
+import {TableModule} from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import {MenubarModule} from 'primeng/menubar';
     HttpClientModule,
     FormsModule,
     BrowserAnimationsModule,
-    MenubarModule
+    MenubarModule,
+    CardModule,
+    ToolbarModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

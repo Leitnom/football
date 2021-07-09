@@ -11,6 +11,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PlayerComponent } from './pages/player/player.component';
 import { TeamComponent } from './pages/team/team.component';
+import { NewteamComponent } from './pages/newteam/newteam.component';
+import { EditeamComponent } from './pages/editeam/editeam.component';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 //PrimeNg
@@ -23,6 +26,11 @@ import {ButtonModule} from 'primeng/button';
 import {ToastModule} from 'primeng/toast';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import { ConfirmationService, MessageService } from 'primeng/api';
+import {PanelModule} from 'primeng/panel';
+import {InputTextModule} from 'primeng/inputtext';
+import {DropdownModule} from 'primeng/dropdown';
+
+
 
 @NgModule({
   declarations: [
@@ -33,7 +41,9 @@ import { ConfirmationService, MessageService } from 'primeng/api';
     PlayersComponent,
     LeagueComponent,
     PlayerComponent,
-    TeamComponent
+    TeamComponent,
+    NewteamComponent,
+    EditeamComponent
 
   ],
   imports: [
@@ -49,7 +59,12 @@ import { ConfirmationService, MessageService } from 'primeng/api';
     TableModule,
     ButtonModule,
     ToastModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    RouterModule,
+    PanelModule,
+    InputTextModule,
+    DropdownModule
+
   ],
   providers: [
     ConfirmationService,

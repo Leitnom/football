@@ -1,13 +1,14 @@
-<div *ngFor="let player of players" style="margin-left: 42%; margin-top: 20px; background: rgb(80, 80, 79); 
-display: inline-block; width: 200px; height: 200px; 
-text-align: center; padding-top: 20px; display: inline-block;" class="card">
-    <img src="{{player.Avatar}}" alt="" width="40%">
-    <div>
-        <h1>{{player.NombredelJugador}}</h1>
-    </div>
-</div>
-<div *ngFor="let team of teams">
-    <a routerLink="/team/{{team.id}}">
-        <h1 style="text-align: center;">Equipo: {{team.Nombredelequipo}}</h1>
-    </a>
+<div class="card">
+    <p-card header="">
+        <div *ngFor="let player of players">
+            <img src="{{player.Avatar}}" alt="{{player.NombredelJugador}}" style="width: 80px;">
+            <h3>{{player.NombredelJugador}}</h3>
+        </div>
+        <div *ngFor="let team of teams">
+            <h3>Equipo: {{team.Nombredelequipo}}</h3>
+        </div>
+        <div *ngFor="let league of leagues">
+            <h3>League: {{league.NombreDeLaLiga}}</h3>
+        </div> 
+    </p-card>
 </div>

@@ -19,6 +19,7 @@ import {MenubarModule} from 'primeng/menubar';
 import {CardModule} from 'primeng/card';
 import {ToolbarModule} from 'primeng/toolbar';
 import {TableModule} from 'primeng/table';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {TableModule} from 'primeng/table';
     MenubarModule,
     CardModule,
     ToolbarModule,
-    TableModule
+    TableModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

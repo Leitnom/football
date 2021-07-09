@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 section .container{
-    display: inline-block;
+    width: 90%;
+    max-width: 1080px;
     margin: 0 auto;
     text-align: center;
 }
@@ -17,5 +18,5 @@ p-card{
     cursor: pointer;
 }
 p-card img{
-    width: 30%;
+    width: 20%;
 }

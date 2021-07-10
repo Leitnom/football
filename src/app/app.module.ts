@@ -15,6 +15,9 @@ import { NewteamComponent } from './pages/newteam/newteam.component';
 import { EditeamComponent } from './pages/editeam/editeam.component';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EditplayerComponent } from './pages/editplayer/editplayer.component';
+import { NewplayerComponent } from './pages/newplayer/newplayer.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 //PrimeNg
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -28,10 +31,7 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import {PanelModule} from 'primeng/panel';
 import {InputTextModule} from 'primeng/inputtext';
-import {DropdownModule} from 'primeng/dropdown';
-import { EditplayerComponent } from './pages/editplayer/editplayer.component';
-import { NewplayerComponent } from './pages/newplayer/newplayer.component';
-import { FilterPipe } from './pipes/filter.pipe';
+
 
 
 
@@ -68,8 +68,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     ConfirmDialogModule,
     RouterModule,
     PanelModule,
-    InputTextModule,
-    DropdownModule
+    InputTextModule
+    
 
   ],
   providers: [

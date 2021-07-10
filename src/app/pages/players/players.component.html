@@ -4,12 +4,18 @@
         <ng-template pTemplate="left">
             <h3>Players Manager</h3>
         </ng-template>
+        <div class="p-d-flex">
+            <span class="p-input-icon-left p-ml-auto">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text" (input)="dt2.filterGlobal($event.target, 'contains')" placeholder="Buscar" />
+            </span>
+        </div>
         <ng-template pTemplate="right">
             <button routerLink="/newplayer" pButton pRipple label="Nuevo" icon="pi pi-plus"
                 class="p-button-success p-mr-2"></button>
         </ng-template>
     </p-toolbar>
-    <p-table [value]="players" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+    <p-table #dt2 [value]="players" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
         [rowsPerPageOptions]="[10,25,50]">
         <ng-template pTemplate="header">

@@ -4,14 +4,20 @@
         <ng-template pTemplate="left">
             <h3>Teams Manager</h3>
         </ng-template>
+        <div class="p-d-flex">
+            <span class="p-input-icon-left p-ml-auto">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text" (input)="dt2.filterGlobal($event.target, 'contains')" placeholder="Buscar"/>
+            </span>
+        </div>
         <ng-template pTemplate="right">
             <button routerLink="/newteam" pButton pRipple label="Nuevo" icon="pi pi-plus"
                 class="p-button-success p-mr-2"></button>
         </ng-template>
     </p-toolbar>
-    <p-table [value]="teams" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
+    <p-table #dt2 [value]="teams" [paginator]="true" [rows]="10" [showCurrentPageReport]="true"
         currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
-        [rowsPerPageOptions]="[10,25,50]">
+        [rowsPerPageOptions]="[10,25,50]" [globalFilterFields]="['name','country.name','representative.name','status']">
         <ng-template pTemplate="header">
             <tr>
                 <th>Imagen</th>

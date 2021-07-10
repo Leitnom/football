@@ -5,21 +5,21 @@
             <div class="p-field p-grid">
                 <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Url de la imagen</label>
                 <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
-                    <input id="firstname" type="text" pInputText formControlName="LogodelEquipo">
+                    <input id="firstname" type="text" pInputText formControlName="LogodelEquipo" placeholder="Url de la imagen" required>
                 </div>
             </div>
 
             <div class="p-field p-grid">
                 <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre del Equipo</label>
                 <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
-                    <input id="firstname" type="text" pInputText formControlName="Nombredelequipo">
+                    <input id="firstname" type="text" pInputText formControlName="Nombredelequipo" placeholder="Nombre del Equipo" required>
                 </div>
             </div>
 
             <div class="p-field p-grid">
                 <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre de la Liga</label>
                 <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
-                    <select class="form-select" formControlName="Liga" aria-label="Default select example">
+                    <select class="form-select" formControlName="Liga" aria-label="Default select example" required>
                         <option value="">Seleccione una Option!</option>
                         <option  *ngFor="let league of leagues" value="{{league.Identificador}}">{{league.NombreDeLaLiga}}
                         </option>

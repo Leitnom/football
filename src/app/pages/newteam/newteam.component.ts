@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FootballService } from 'src/app/services/football.service';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ConfirmationService, MessageService, PrimeNGConfig } from 'primeng/api';
 
@@ -11,10 +11,10 @@ import { ConfirmationService, MessageService, PrimeNGConfig } from 'primeng/api'
 })
 export class NewteamComponent implements OnInit {
   newTeam = new FormGroup({
-    LogodelEquipo: new FormControl(''),
-    Nombredelequipo: new FormControl(''),
-    Liga: new FormControl(''),
-    id: new FormControl('')
+    LogodelEquipo: new FormControl('', Validators.min(6)),
+    Nombredelequipo: new FormControl('', Validators.required),
+    Liga: new FormControl('', Validators.required),
+    id: new FormControl('', Validators.required)
   });
 
   leagues: any;

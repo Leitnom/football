@@ -11,8 +11,7 @@ import { Router } from '@angular/router';
 })
 export class TeamsComponent implements OnInit {
 
-  teams: any;
-  selectedProducts: any[] = [];
+  teams: any[] =[];
 
   constructor(private football: FootballService, private route: Router, private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private messageService: MessageService) {
 
@@ -55,7 +54,7 @@ export class TeamsComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargardatos();
-    this.primengConfig.ripple = true;
+    this.primengConfig.ripple = true; 
   }
 
 }

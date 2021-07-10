@@ -1,24 +1,35 @@
 <p-toast key="myKey2"></p-toast>
-<div class="container">
+<p-panel header="NewPlayer">
     <form [formGroup]="newPlayer" (ngSubmit)="newForm(newPlayer.value)">
-        <div class="form-group">
-            <label for="imagen" class="form-label">Url de la imagen</label>
-            <input type="text" class="form-control" formControlName="Avatar"  placeholder="Url de la imagen">
-        </div>
-        <div class="form-goup">
-            <label for="formGroupExampleInput2" class="form-label">Nombre del Jugador</label>
-            <input type="text" class="form-control" formControlName="NombredelJugador"  id="formGroupExampleInput2" placeholder="Nombre del Jugador">
-        </div>
-        <div class="form-goup">
-            <label for="team" class="form-label">Equipo</label>
-            <select class="form-select" formControlName="teamId" aria-label="Default select example">
-                <option value="">Seleccione una Option!</option>
-                <option  *ngFor="let team of teams" value="{{team.id}}">{{team.Nombredelequipo}}
-                </option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-success">Guardar</button>
-        <button routerLink="/teams" type="button" class="btn btn-segundary">Cancelar</button>
-    </form>
-</div>
+        <div class="p-fluid" style="text-align: left;">
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Url de la imagen</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
+                    <input pInputText formControlName="Avatar" placeholder="Url de la imagen" id="url">
+                </div>
+            </div>
 
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre del Juagador</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
+                    <input pInputText formControlName="NombredelJugador" placeholder="Nombre del Juagador" id="nombre">
+                </div>
+            </div>
+
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre de la Liga</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
+                    <select class="form-select" formControlName="teamId" aria-label="Default select example">
+                        <option value="">Seleccione una Option!</option>
+                        <option  *ngFor="let team of teams" value="{{team.id}}">{{team.Nombredelequipo}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <button type="submit" pButton pRipple label="Guardar" class="p-button-success"></button>
+                <button routerLink="/players" pButton pRipple label="Cancelar" class="p-button-secondary"></button>
+            </div>
+        </div>
+    </form>
+</p-panel>

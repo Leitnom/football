@@ -31,6 +31,7 @@ import {InputTextModule} from 'primeng/inputtext';
 import {DropdownModule} from 'primeng/dropdown';
 import { EditplayerComponent } from './pages/editplayer/editplayer.component';
 import { NewplayerComponent } from './pages/newplayer/newplayer.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 
 
@@ -47,7 +48,8 @@ import { NewplayerComponent } from './pages/newplayer/newplayer.component';
     NewteamComponent,
     EditeamComponent,
     EditplayerComponent,
-    NewplayerComponent
+    NewplayerComponent,
+    FilterPipe
 
   ],
   imports: [

@@ -20,6 +20,7 @@ export class EditeamComponent implements OnInit {
 
   leagues: any;
   team: any;
+  
   constructor(private football: FootballService, private activatedRoute: ActivatedRoute, private route: Router, private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private messageService: MessageService) {
     this.activatedRoute.params.subscribe(params => {
       this.football.getTeamById(params.id).subscribe((data: any) => {
@@ -42,7 +43,6 @@ export class EditeamComponent implements OnInit {
     });
 
   }
-
 
   ngOnInit(): void {
   }

@@ -1,23 +1,35 @@
 <p-toast key="myKey2"></p-toast>
-<div class="container">
+<p-panel header="New Team">
     <form [formGroup]="newTeam" (ngSubmit)="newForm(newTeam.value)">
-        <div class="form-group">
-            <label for="imagen" class="form-label">Url de la imagen</label>
-            <input type="text" class="form-control" formControlName="LogodelEquipo"  placeholder="Url de la imagen">
-        </div>
-        <div class="form-goup">
-            <label for="formGroupExampleInput2" class="form-label">Nombre del Equipo</label>
-            <input type="text" class="form-control" formControlName="Nombredelequipo"  id="formGroupExampleInput2" placeholder="Nombre del Equipo">
-        </div>
-        <div class="form-goup">
-            <label for="league" class="form-label">League</label>
-            <select class="form-select" formControlName="Liga" aria-label="Default select example">
-                <option value="">Seleccione una Option!</option>
-                <option  *ngFor="let league of leagues" value="{{league.Identificador}}">{{league.NombreDeLaLiga}}
-                </option>
-            </select>
-        </div>
-        <button type="submit" class="btn btn-success">Guardar</button>
-        <button routerLink="/teams" type="button" class="btn btn-segundary">Cancelar</button>
+        <div class="p-fluid" style="text-align: left;">
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Url de la imagen</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
+                    <input id="firstname" type="text" pInputText formControlName="LogodelEquipo">
+                </div>
+            </div>
+
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre del Equipo</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
+                    <input id="firstname" type="text" pInputText formControlName="Nombredelequipo">
+                </div>
+            </div>
+
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre de la Liga</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
+                    <select class="form-select" formControlName="Liga" aria-label="Default select example">
+                        <option value="">Seleccione una Option!</option>
+                        <option  *ngFor="let league of leagues" value="{{league.Identificador}}">{{league.NombreDeLaLiga}}
+                        </option>
+                    </select>
+                </div>
+            </div>
+            <div class="p-field p-grid">
+                <button type="submit" pButton pRipple label="Guardar" class="p-button-success"></button>
+                <button routerLink="/teams" pButton pRipple type="button" label="Cancelar" class="p-button-secondary"></button>
+            </div>
+        </div>       
     </form>
-</div>
+</p-panel>

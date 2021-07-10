@@ -28,18 +28,6 @@
   ],
   "teams": [
     {
-      "LogodelEquipo": "https://robohash.org/autemvoluptatemdolorem.png?size=250x250&set=set1",
-      "Nombredelequipo": "Shuffletagttt",
-      "Liga": "e1ebc55c-925e-4ce4-bd66-49c41b4b3895",
-      "id": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "LogodelEquipo": "https://robohash.org/velitfugitiure.png?size=250x250&set=set1",
-      "Nombredelequipo": "Shuffletag",
-      "Liga": "4ddb5753-679c-4500-906a-f7b2a5f3f95c",
-      "id": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
-    },
-    {
       "Nombredelequipo": "Zooveo",
       "id": "72434eb3-b64f-49ff-9070-99780c5122af",
       "LogodelEquipo": "https://robohash.org/quinonex.png?size=250x250&set=set1",
@@ -52,10 +40,10 @@
       "Liga": "4ddb5753-679c-4500-906a-f7b2a5f3f95c"
     },
     {
-      "Nombredelequipo": "Kazu",
-      "id": "be4ad44b-2270-47c3-9641-c64f60c0325e",
-      "LogodelEquipo": "https://robohash.org/sitautemofficiis.png?size=250x250&set=set1",
-      "Liga": "0a886c97-032e-4f37-8caf-24d875b2ac21"
+      "LogodelEquipo": "data:image/jpeg;base64,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",
+      "Nombredelequipo": "vaca lola",
+      "Liga": "0a886c97-032e-4f37-8caf-24d875b2ac21",
+      "id": "be4ad44b-2270-47c3-9641-c64f60c0325e"
     },
     {
       "Nombredelequipo": "Minyx",
@@ -584,43 +572,13 @@
       "id": "eafc62fa-32aa-4cef-993f-61c400711c1a",
       "LogodelEquipo": "https://robohash.org/quasiettempore.png?size=250x250&set=set1",
       "Liga": "e1ebc55c-925e-4ce4-bd66-49c41b4b3895"
-    },
-    {
-      "Nombredelequipo": "Minyx",
-      "id": "be26c85f-1f76-4256-81d7-ebf42f2e711a",
-      "LogodelEquipo": "https://robohash.org/dolorinciduntquia.png?size=250x250&set=set1",
-      "Liga": "2b44c97f-c1f8-4731-a627-4bdedcca7ece"
-    },
-    {
-      "LogodelEquipo": "ff",
-      "Nombredelequipo": "fff",
-      "Liga": "0a886c97-032e-4f37-8caf-24d875b2ac21",
-      "id": "uaCAyCd"
-    },
-    {
-      "LogodelEquipo": "f",
-      "Nombredelequipo": "f",
-      "Liga": "0a886c97-032e-4f37-8caf-24d875b2ac21",
-      "id": "g8l3c4v"
-    },
-    {
-      "LogodelEquipo": "uu",
-      "Nombredelequipo": "uu",
-      "Liga": "4ddb5753-679c-4500-906a-f7b2a5f3f95c",
-      "id": "Yu14-DZ"
-    },
-    {
-      "LogodelEquipo": "ultimo",
-      "Nombredelequipo": "ultimo",
-      "Liga": "4ddb5753-679c-4500-906a-f7b2a5f3f95c",
-      "id": "PFWzYDz"
     }
   ],
   "players": [
     {
       "Avatar": "https://robohash.org/commodieavel.png?size=250x250&set=set1",
-      "NombredelJugador": "Amelie Hassans",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b",
+      "NombredelJugador": "Amelie Hassans3",
+      "teamId": "791664dd-9eb8-4bdd-8dd2-eb852d55cc1b",
       "id": "a933aea8-a3af-4d52-ac93-1779f201e607"
     },
     {
@@ -1156,24 +1114,6 @@
       "id": "b38d78eb-e606-45f7-8a2c-963a79ec0f7c",
       "Avatar": "https://robohash.org/etaliquamvoluptatum.png?size=250x250&set=set1",
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
-    },
-    {
-      "NombredelJugador": "Min Goede",
-      "id": "3333dd96-6109-4fb4-b71d-ec96672ee987",
-      "Avatar": "https://robohash.org/aestmaiores.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Shelli Roache",
-      "id": "90a4b220-5597-4f89-af6a-21f32c9c22b3",
-      "Avatar": "https://robohash.org/consequunturaliquamatque.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Kyla Boissieux",
-      "id": "7c168fa4-cca9-44f9-b03c-52af4d0b336b",
-      "Avatar": "https://robohash.org/remdolorquo.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
     },
     {
       "NombredelJugador": "Mendie De Avenell",
@@ -1722,24 +1662,6 @@
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
     },
     {
-      "NombredelJugador": "Eleonora Stollenwerck",
-      "id": "23dccbcf-2f54-41d1-977e-de3d623d18db",
-      "Avatar": "https://robohash.org/nihilquodesse.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Adolph Rugg",
-      "id": "57f21c2c-9c50-41b0-bef6-8520f26e33e0",
-      "Avatar": "https://robohash.org/delectussinteligendi.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Merna Egalton",
-      "id": "ec0433b0-faa8-4779-8a75-50baad1cf04b",
-      "Avatar": "https://robohash.org/temporibusnisiest.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
-    },
-    {
       "NombredelJugador": "Felic Tieraney",
       "id": "95e7c679-22ce-43e0-86d6-41ac2ad8c64e",
       "Avatar": "https://robohash.org/autsolutain.png?size=250x250&set=set1",
@@ -2284,24 +2206,6 @@
       "id": "d09a616d-c53f-4e25-b6e2-f046b9ea7898",
       "Avatar": "https://robohash.org/eumsapienteanimi.png?size=250x250&set=set1",
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
-    },
-    {
-      "NombredelJugador": "Launce Roblou",
-      "id": "cce2bec5-71d7-466b-9726-107dbaed600e",
-      "Avatar": "https://robohash.org/omnisquosesse.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Paulina Brockbank",
-      "id": "1a248cf6-655f-4d95-9c7c-6503026e442a",
-      "Avatar": "https://robohash.org/utvitaesed.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Amara Fines",
-      "id": "d6d34779-a6b6-40a0-8baa-e8257e7a032c",
-      "Avatar": "https://robohash.org/facerevoluptastemporibus.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
     },
     {
       "NombredelJugador": "Rosalynd Bosman",
@@ -2850,24 +2754,6 @@
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
     },
     {
-      "NombredelJugador": "Phillip Darkott",
-      "id": "d205252e-0bae-4533-bdd2-0bba4a10ab7b",
-      "Avatar": "https://robohash.org/cumnullaaperiam.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Analiese Watkiss",
-      "id": "333cdccd-9b24-4d6f-9583-91b19bf0a4b8",
-      "Avatar": "https://robohash.org/consecteturaliasdolor.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Neila Mocker",
-      "id": "231ea8e0-6f82-41d4-abac-6b2b9a6e6ad0",
-      "Avatar": "https://robohash.org/voluptatuminaut.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
-    },
-    {
       "NombredelJugador": "Laurella Porker",
       "id": "12974713-3270-4ce8-9357-ca03a4b16699",
       "Avatar": "https://robohash.org/omnisdoloremqueut.png?size=250x250&set=set1",
@@ -3412,24 +3298,6 @@
       "id": "974bf630-270a-4d05-ac7e-4bd7dfb2ab5e",
       "Avatar": "https://robohash.org/beataequaeratmolestiae.png?size=250x250&set=set1",
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
-    },
-    {
-      "NombredelJugador": "Trula Snary",
-      "id": "65cf7126-89b8-43e4-bdf4-8843891a4577",
-      "Avatar": "https://robohash.org/adipisciquisquamsit.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Chad Forrestall",
-      "id": "f3ae91a4-a3f1-4e00-8ba4-3324448a149c",
-      "Avatar": "https://robohash.org/quidemvelitexercitationem.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Tim Twinterman",
-      "id": "25402523-7a45-479c-8de0-16c60a29e26b",
-      "Avatar": "https://robohash.org/eligendienimqui.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
     },
     {
       "NombredelJugador": "Ianthe Tremeer",
@@ -3978,24 +3846,6 @@
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
     },
     {
-      "NombredelJugador": "Darby MacAlister",
-      "id": "2f5f3b6f-b992-4dca-835d-77e754dd4f36",
-      "Avatar": "https://robohash.org/corporisquisoccaecati.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Teddy Chesterton",
-      "id": "01337091-c581-402b-8f38-2ce3e446ca45",
-      "Avatar": "https://robohash.org/oditsuntvel.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Marys Bende",
-      "id": "993411b6-3a82-47bb-9c8d-ae6e1d47e09a",
-      "Avatar": "https://robohash.org/rerumfugiatmaiores.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
-    },
-    {
       "NombredelJugador": "Dante Sommerly",
       "id": "1922af1d-4a9b-439d-87b6-695f1dab0831",
       "Avatar": "https://robohash.org/quibusdammaioresperferendis.png?size=250x250&set=set1",
@@ -4540,24 +4390,6 @@
       "id": "5892f534-ebc3-46d1-922b-03bb99057ebc",
       "Avatar": "https://robohash.org/voluptatemillorerum.png?size=250x250&set=set1",
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
-    },
-    {
-      "NombredelJugador": "Wilbert Laurance",
-      "id": "b5ef7f6c-bf79-4679-94e9-4e488e4d9cdb",
-      "Avatar": "https://robohash.org/molestiaeautemlaudantium.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Bibi Lammerich",
-      "id": "e0d237a4-316b-4b78-8bb4-42342dbe1039",
-      "Avatar": "https://robohash.org/voluptatumdoloribusvoluptatibus.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Lydon Denisyuk",
-      "id": "b179e2db-5ebd-4b77-98f8-13799f8956d9",
-      "Avatar": "https://robohash.org/corruptiofficiavoluptatem.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
     },
     {
       "NombredelJugador": "Nye Oneill",
@@ -5106,24 +4938,6 @@
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
     },
     {
-      "NombredelJugador": "Conrad Tremmel",
-      "id": "8a875b73-41bf-4902-a157-83e5d523a2ad",
-      "Avatar": "https://robohash.org/nesciuntporrorerum.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Kennan Harder",
-      "id": "21f91bdc-f8bd-471e-983c-f864d66a5214",
-      "Avatar": "https://robohash.org/sapienteomnisimpedit.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Dud Inkles",
-      "id": "ffd0fad4-b564-4a91-9853-593696b672f3",
-      "Avatar": "https://robohash.org/assumendacorporiset.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
-    },
-    {
       "NombredelJugador": "Kale Hyndes",
       "id": "01005009-259f-43fd-ac47-9a24e91f58df",
       "Avatar": "https://robohash.org/laboriosamvoluptatesquia.png?size=250x250&set=set1",
@@ -5668,24 +5482,6 @@
       "id": "9b865571-1575-41ed-90c1-7ed3b8fe9ddc",
       "Avatar": "https://robohash.org/accusamuseiusreprehenderit.png?size=250x250&set=set1",
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
-    },
-    {
-      "NombredelJugador": "Piper Biss",
-      "id": "05b57b1c-9367-4224-b169-acfd81a06a63",
-      "Avatar": "https://robohash.org/omnisexercitationemeum.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Dido Fyfield",
-      "id": "cbdd259a-f6a8-4310-9c78-e7bb4961be58",
-      "Avatar": "https://robohash.org/quosmagninisi.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Thayne Laise",
-      "id": "a5b330ed-6d7c-4227-8a7c-c9809dfae699",
-      "Avatar": "https://robohash.org/magnietut.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
     },
     {
       "NombredelJugador": "Tomlin Sedworth",
@@ -6234,24 +6030,6 @@
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
     },
     {
-      "NombredelJugador": "Lin Janning",
-      "id": "288239df-330f-4a51-be6e-eabb43b3da1d",
-      "Avatar": "https://robohash.org/corporisincorrupti.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Tine Salthouse",
-      "id": "1c2faa93-607e-452f-9f62-215fa48a5a89",
-      "Avatar": "https://robohash.org/repudiandaeveritatissequi.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Kleon Choudhury",
-      "id": "e35ccaef-1e75-4e53-97ca-22af1fdb4fa8",
-      "Avatar": "https://robohash.org/numquamdeseruntvoluptas.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
-    },
-    {
       "NombredelJugador": "Nissa Hansman",
       "id": "f845771b-c292-432f-8edd-5ffc59cf36dc",
       "Avatar": "https://robohash.org/dolorvoluptasdolor.png?size=250x250&set=set1",
@@ -6796,24 +6574,6 @@
       "id": "8f885b7e-86c7-4d7d-8921-b045495ed071",
       "Avatar": "https://robohash.org/velsolutaest.png?size=250x250&set=set1",
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
-    },
-    {
-      "NombredelJugador": "Shanta Burless",
-      "id": "3635aa88-3dce-4283-8c5c-684ffd1ff3d3",
-      "Avatar": "https://robohash.org/nonquasiquo.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
-      "NombredelJugador": "Carleen Shackesby",
-      "id": "f085581d-65ca-4042-87e3-e33df36025e7",
-      "Avatar": "https://robohash.org/eumofficiaet.png?size=250x250&set=set1",
-      "teamId": "8154f4cb-246b-4bf9-bc64-51f8661b6781"
-    },
-    {
-      "NombredelJugador": "Madelena Le Page",
-      "id": "68c84795-5006-431a-a3be-86eccd04582d",
-      "Avatar": "https://robohash.org/aliquamprovidentsimilique.png?size=250x250&set=set1",
-      "teamId": "1d0bb8f3-0584-4222-90d7-e7a6c3a5100b"
     },
     {
       "NombredelJugador": "Doralin Philipot",
@@ -7362,16 +7122,16 @@
       "teamId": "eafc62fa-32aa-4cef-993f-61c400711c1a"
     },
     {
-      "NombredelJugador": "Adoree Eadon",
-      "id": "cdd1ada9-4128-4233-8ba4-5120c31668af",
-      "Avatar": "https://robohash.org/inutminus.png?size=250x250&set=set1",
-      "teamId": "be26c85f-1f76-4256-81d7-ebf42f2e711a"
-    },
-    {
       "Avatar": "data:image/jpeg;base64,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",
       "NombredelJugador": "Nicolas",
       "teamId": "be4ad44b-2270-47c3-9641-c64f60c0325e",
       "id": "wXvVZZp"
+    },
+    {
+      "Avatar": "https://robohash.org/autemvoluptatemdolorem.png?size=250x250&set=set1",
+      "NombredelJugador": "Gale de Brokee",
+      "teamId": "0136b321-0451-4542-91d2-3f258f84a4b2",
+      "id": "w-0jqti"
     }
   ]
 }

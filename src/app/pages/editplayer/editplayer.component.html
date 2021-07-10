@@ -1,30 +1,24 @@
 <p-toast key="myKey2"></p-toast>
 <p-panel header="EditarPlayer">
     <form [formGroup]="editPlayer" (ngSubmit)="editForm(editPlayer.value)">
-        <div class="ul-g ui-fluid">
-            <div class="ul-g-12">
-                <div class="ui-g-4">
-                    <label for="url">Url de la imagen</label>
-                </div>
-                <div class="ui-g-8">
+        <div class="p-fluid" style="text-align: left;">
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Url de la imagen</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
                     <input pInputText formControlName="Avatar" placeholder="Url de la imagen" id="url">
                 </div>
             </div>
 
-            <div class="ul-g-12">
-                <div class="ui-g-4">
-                    <label for="nombre">Nombre del Juagador</label>
-                </div>
-                <div class="ui-g-8">
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre del Juagador</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
                     <input pInputText formControlName="NombredelJugador" placeholder="Nombre del Juagador" id="nombre">
                 </div>
             </div>
 
-            <div class="ul-g-12">
-                <div class="ui-g-4">
-                    <label for="url">Equipo</label>
-                </div>
-                <div class="ui-g-8">
+            <div class="p-field p-grid">
+                <label for="firstname" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nombre de la Liga</label>
+                <div class="p-col-12 p-md-8" style="margin-bottom: 20px;">
                     <select class="form-select" formControlName="teamId" aria-label="Default select example">
                         <option *ngFor="let team of teams" value="{{team.id}}">
                             {{team.Nombredelequipo}}
@@ -32,8 +26,10 @@
                     </select>
                 </div>
             </div>
+            <div class="p-field p-grid">
+                <button type="submit" pButton pRipple label="Guardar" class="p-button-success"></button>
+                <button routerLink="/players" pButton pRipple label="Cancelar" class="p-button-secondary"></button>
+            </div>
         </div>
-        <button type="submit" class="btn btn-success">Guardar</button>
-        <button routerLink="/players" type="button" class="btn btn-segundary">Cancelar</button>
     </form>
 </p-panel>

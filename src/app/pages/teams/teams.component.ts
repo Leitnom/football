@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
 export class TeamsComponent implements OnInit {
 
   teams: any;
+  selectedProducts: any[] = [];
 
   constructor(private football: FootballService, private route: Router, private confirmationService: ConfirmationService, private primengConfig: PrimeNGConfig, private messageService: MessageService) {
 

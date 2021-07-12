@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
+# INICIAR EL SERVIDOR JS SERVER
+
+Desde el directorio raiz ejecuta el siguiente comando`json-server --watch football.json`. Navegue a la direccion `http://localhost:3000/`.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
